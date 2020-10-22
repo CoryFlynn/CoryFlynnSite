@@ -1,0 +1,105 @@
+.about-image {
+  height: 400px;
+  width: 300px;
+}
+
+.about-image-container {
+  float: right;
+  width: 500px;
+  text-align: center;
+  z-index: -1;
+}
+
+.about-container {
+  background-color: #ffffff;
+  width: 100%;
+  display: inline-block;
+  flex-direction: column;
+  align-items: left;
+  object-fit: contain;
+  margin-top: 10px;
+}
+
+.about-text-container {
+  width: calc(100vw - 600px);
+  float: left;
+  margin-left: 100px;
+}
+
+.about-container > .about-text-container > h1 {
+  color: #231f20;
+  font-size: 50px;
+}
+
+.about-container > .about-text-container > p {
+  margin: 8px 20px;
+  color: #231f20;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.about-btns {
+  margin-top: 32px;
+}
+
+.about-btns .btn {
+  margin: 6px;
+}
+
+.fa-play-circle {
+  margin-left: 4px;
+}
+
+@media screen and (max-width: 960px) {
+  .about-container > .about-text-container > h1 {
+    font-size: 42px;
+  }
+
+  .about-container > .about-text-container > p {
+    font-size: 24px;
+  }
+
+  .about-image-container {
+    width: 400px;
+  }
+
+  .about-text-container {
+    width: calc(100vw - 500px);
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-container > .about-text-container > h1 {
+    font-size: 35px;
+  }
+
+  .about-container > .about-text-container > p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-container > .about-text-container > h1 {
+    font-size: 20px;
+  }
+
+  .about-container > .about-text-container > p {
+    font-size: 16px;
+  }
+
+  .about-image-container {
+    width: 100px;
+    margin-right: 10px;
+  }
+
+  .about-image {
+    height: 135px;
+    width: 100px;
+  }
+
+  .about-text-container {
+    width: calc(100vw - 130px);
+    margin-left: 20px;
+  }
+}

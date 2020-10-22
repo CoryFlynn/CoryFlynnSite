@@ -1,0 +1,16 @@
+.footer-container {
+  color: #231f20;
+  font-size: 18px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+
+.link-img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.83;
+  margin: 4px 10px;
+  vertical-align: middle;
+}
