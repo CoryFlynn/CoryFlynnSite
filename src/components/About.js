@@ -36,7 +36,7 @@ export default function About() {
       <div className="about-image-container">
         <div className="image-top" />
         <Parallax y={[`-${off}px`, `${off}px`]}>
-          <img className="about-image" src={"images/IMG_3449.JPG"} alt="Cory Flynn Fish" />
+          <img className="about-image" src={"https://coryflynnsiteimages.s3-us-west-1.amazonaws.com/IMG_3449.jpg"} alt="Cory Flynn Fish" />
         </Parallax>
         <div className="image-bottom" />
       </div>
