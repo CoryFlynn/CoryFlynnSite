@@ -32,7 +32,7 @@ export default function Ride() {
         </p>
         <p>
           You can find the Ride to Snow application at{" "}
-          <a style={{ color: "#231f20" }} href="https://ridetosnow.com/Home.html">
+          <a style={{ color: "#231f20" }} href="https://ridetosnow.com/">
             {" "}
             RideToSnow.com
           </a>
