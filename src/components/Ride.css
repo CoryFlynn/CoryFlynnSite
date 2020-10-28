@@ -1,5 +1,5 @@
 .ride-image {
-  height: 500px;
+  height: 300px;
   width: 500px;
 
   vertical-align: middle;
@@ -9,7 +9,6 @@
   float: left;
   width: 500px;
   text-align: center;
-  z-index: 1;
 }
 
 .ride-container {
@@ -37,7 +36,7 @@
 .ride-container > .ride-text-container > p {
   margin: 8px 20px;
   color: #231f20;
-  font-size: 20px;
+  font-size: 23px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
@@ -80,6 +79,20 @@
   .ride-container > .ride-text-container > p {
     font-size: 18px;
   }
+
+  .ride-image {
+    height: 200px;
+    width: 200px;
+  }
+
+  .ride-text-container {
+    width: calc(100vw - 200px);
+    margin-left: 20px;
+  }
+  .ride-image-container {
+    width: 100px;
+    margin-right: 10px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -92,18 +105,18 @@
   }
 
   .ride-image-container {
-    width: 120px;
+    width: 110px;
     margin-left: 5px;
     margin-top: 200px;
   }
 
   .ride-image {
-    height: 133px;
-    width: 135px;
+    height: 119px;
+    width: 120px;
   }
 
   .ride-text-container {
-    width: calc(100vw - 135px);
+    width: calc(100vw - 140px);
     margin-left: 10px;
   }
 }

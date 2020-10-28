@@ -12,6 +12,17 @@ button:focus {
   z-index: 999;
 }
 
+.navbar-click {
+  background-color: transparent;
+  height: 80px;
+  display: flex;
+  font-size: 1.2rem;
+  width: 100%;
+  transition: all 0.3s top;
+  z-index: 999;
+  overflow-y: hidden;
+}
+
 .navbar-container {
   display: flex;
   align-items: center;

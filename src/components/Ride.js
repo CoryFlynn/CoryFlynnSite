@@ -1,25 +1,20 @@
 import React, { useState, useEffect } from "react";
 import "./Ride.css";
-import { Parallax } from "react-scroll-parallax";
+import Par from "./Par.js";
 
 export default function Ride() {
-  const [off, setOff] = useState(0);
-  const handleResize = () => {
-    if (window.innerWidth > 1600) setOff(0);
-    else if (window.innerWidth > 1200) setOff(500);
-    else if (window.innerWidth > 1000) setOff(400);
-    else if (window.innerWidth > 800) setOff(250);
-    else if (window.innerWidth > 760) setOff(350);
-    else if (window.innerWidth > 700) setOff(240);
-    else if (window.innerWidth > 600) setOff(300);
-    else if (window.innerWidth >= 400) setOff(200);
-  };
+  const [height, setHeight] = useState(0);
 
   useEffect(() => {
-    handleResize();
-  });
+    setHeight(document.getElementsByClassName("ride-container")[0].clientHeight);
+    const handleResize = () => {
+      setHeight(document.getElementsByClassName("ride-container")[0].clientHeight);
+    };
 
-  window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className="ride-container">
@@ -44,9 +39,9 @@ export default function Ride() {
         </p>
       </div>
       <div className="ride-image-container">
-        {/* <Parallax y={[`-${off}px`, `${off}px`]}> */}
-        <img className="ride-image" src={"images/RTS.svg"} alt="Ride To Snow Logo" />
-        {/* </Parallax> */}
+        <Par height={height}>
+          <img className="ride-image" src={"images/RTS.svg"} alt="Ride To Snow Logo" />
+        </Par>
       </div>
     </div>
   );

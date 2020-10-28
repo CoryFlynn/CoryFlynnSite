@@ -1,28 +1,26 @@
 import React, { useState, useEffect } from "react";
 import "./About.css";
-import { Parallax } from "react-scroll-parallax";
+import Border from "./Border";
+import EvoBall from "./EvoBall";
 
 export default function About() {
-  const [off, setOff] = useState(0);
-  const handleResize = () => {
-    if (window.innerWidth > 1070) setOff(0);
-    else if (window.innerWidth > 1000) setOff(100);
-    else if (window.innerWidth > 900) setOff(150);
-    else if (window.innerWidth > 800) setOff(250);
-    else if (window.innerWidth > 760) setOff(350);
-    else if (window.innerWidth > 700) setOff(240);
-    else if (window.innerWidth > 600) setOff(300);
-    else if (window.innerWidth >= 400) setOff(200);
-  };
+  const [height, setHeight] = useState(400);
+  const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    handleResize();
-  });
+    const adjustImage = () => {
+      setHeight(document.getElementsByClassName("about-text-container")[0].clientHeight);
+      setWidth(window.innerWidth);
+    };
 
-  window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", adjustImage);
+
+    return () => window.removeEventListener("resize", adjustImage);
+  }, []);
 
   return (
     <div className="about-container">
+      <Border />
       <div className="about-text-container">
         <h1>About Me</h1>
         <p>
@@ -34,12 +32,11 @@ export default function About() {
         </p>
       </div>
       <div className="about-image-container">
-        <div className="image-top" />
-        <Parallax y={[`-${off}px`, `${off}px`]}>
-          <img className="about-image" src={"https://coryflynnsiteimages.s3-us-west-1.amazonaws.com/IMG_3449.jpg"} alt="Cory Flynn Fish" />
-        </Parallax>
-        <div className="image-bottom" />
+        <img src="https://coryflynnsiteimages.s3-us-west-1.amazonaws.com/IMG_3449.jpeg" alt="Fish" className="about-image" />
       </div>
+      <EvoBall xPos={200} yPos={height + 155} size={40} safe={0} />
+      {width > 650 ? <EvoBall xPos={width / 1.1} yPos={250} size={140} safe={1} /> : null}
+      <EvoBall xPos={0} yPos={50} size={100} safe={0} />
     </div>
   );
 }
