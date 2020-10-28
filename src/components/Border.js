@@ -18,7 +18,14 @@ export default function Border() {
         <div className="about-border5" />
         <div className="about-border6" />
         <div className="about-border7" />
-        <video className="moving-Img" src={"images/old.mp4"} alt="moving img" autoPlay={true} loop={true} muted />
+        <video
+          className="moving-Img"
+          src={"https://coryflynnsiteimages.s3-us-west-1.amazonaws.com/old.mp4"}
+          alt="moving img"
+          autoPlay={true}
+          loop={true}
+          muted
+        />
       </div>
     );
   }
