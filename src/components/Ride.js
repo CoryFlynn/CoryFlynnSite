@@ -21,9 +21,9 @@ export default function Ride() {
       <div className="ride-text-container">
         <h1> Ride To Snow </h1>
         <p>
-          Ride To Snow is a ride sharing website designed for snow lovers in the Greater Denver Area. I began developing the site in the latter months of 2019
-          and have been slowly making progress during the summer of 2020. Ride To Snow allows for drivers to seek out riders and split costs for transportation
-          up to the mountains, and for people without transportation to find a ride.
+          Ride To Snow is a ride sharing website designed for snow lovers in the Greater Denver Area. Initially a service I dreamed of having at the University
+          of Colorado, Ride To Snow has become a full-time project for me during the off-time provided by the COVID-19 pandemic. Ride To Snow allows for drivers
+          to seek out riders and split costs for transportation up to the mountains, and for people without transportation to find a ride.
         </p>
         <p>
           You can find the Ride to Snow application at{" "}
@@ -36,6 +36,11 @@ export default function Ride() {
           select a mountain and quickly view the conditions. The data for this weather comes from two different API's. The first is the Dark Sky API, which
           gives us basic weather information such as temperature. The other API we used is called Snowline. This API allows us to connect to SNOTEL stations
           nearest to each resort, giving us data on snow depth, snowfall in the last 24 hours, and wind speed.
+        </p>
+        <p>
+          Still under construction, I would like to add are national availabilty using google maps rather than pre determined locations. The weather forecast
+          will also be updated to find the data of the nearest snowtell station. I am currently working on transitioning the app from Heroku to the AWS platform
+          as it offers a more freedom of development.
         </p>
       </div>
       <div className="ride-image-container">
