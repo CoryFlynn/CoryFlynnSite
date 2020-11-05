@@ -24,11 +24,14 @@ export default function About() {
       <div className="about-text-container">
         <h1>About Me</h1>
         <p>
-          My name is Cory Flynn and I am a software developer. I specialize in web developement, but recently I have been exploring other aspects of the trade.
-          I grew up in Redmond, Washington; a suburb between Seattle and the Cascade Mountains. I have always been a very active person. Growing up, I spent a
-          lot of time in the snow leading me to attend the University of Colorado in Boulder, where I earned a Bachelors Degree in Computer Science as well as
-          minors in both Mathematics and ATOC. For those unfamiliar, ATOC is the study of Atmospheric and Oceanic Sciences, the study of the physics that lead
-          to weather patterns and events. The idea of integrating this knowledge with my knowledge of software is something that excites me on a daily basis.
+          As the domain suggests, my name is Cory Flynn and I am a software developer. I grew up in Sammamish, Washington; a suburb between Seattle and the
+          Cascade Mountains. Because of my upbringing, I have always been drawn to the outdoors. I've been skiing for as long as I can remember, but recently I
+          have fallen in love with fishing and surfing. I think this love stems from the fact that I can fish and surf when theres no snow around. For my
+          education I attended the University of Colorado Boulder, where I struggled to find a major that was a good fit. After switching majors from Business
+          to Nueroscience, I finally settled on studying Computer Science and earned a Bachelors Degree in this discipline. In addition to Computer Science, I
+          was inclined to pick up two minors. One in Mathematics, a field that for reasons I cannot explain I have always been drawn to, and another in
+          Atmospheric and Oceanic Sciences. That one is a little easier to explain given my background as an outdoorsman, as it allowed me to explore the
+          science behind the natural phenomena that bring me so much enjoyment.
         </p>
       </div>
       <div className="about-image-container">

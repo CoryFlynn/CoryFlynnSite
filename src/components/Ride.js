@@ -32,15 +32,15 @@ export default function Ride() {
             RideToSnow.com
           </a>
           . The application is made with basic HTML, CSS, and JS and runs on Heroku. Heroku provides both hosting and a postgres database for the application.
-          In order for riders to find the best conditions quickly, I also integrated a weather bar into the application. The weather section allows users to
-          select a mountain and quickly view the conditions. The data for this weather comes from two different API's. The first is the Dark Sky API, which
+          In order for riders to find the best conditions quickly I provided a weather forecast component in the application. The weather section allows users
+          to select a mountain and quickly view the conditions. The data for this weather comes from two different API's. The first is the Dark Sky API, which
           gives us basic weather information such as temperature. The other API we used is called Snowline. This API allows us to connect to SNOTEL stations
           nearest to each resort, giving us data on snow depth, snowfall in the last 24 hours, and wind speed.
         </p>
         <p>
           Still under construction, I would like to add are national availabilty using google maps rather than pre determined locations. The weather forecast
           will also be updated to find the data of the nearest snowtell station. I am currently working on transitioning the app from Heroku to the AWS platform
-          as it offers a more freedom of development.
+          as it offers a more freedom of development. Eventually, I will upgrade the UI to use React as it will allow more dynamic interaction.
         </p>
       </div>
       <div className="ride-image-container">
