@@ -43,7 +43,7 @@ export default function About() {
         <img src="https://coryflynnsiteimages.s3-us-west-1.amazonaws.com/IMG_3449.jpeg" alt="Fish" className="about-image" />
       </div>
       <EvoBall xPos={200} yPos={height + 155} size={40} safe={0} />
-      {width > 650 ? <EvoBall xPos={width / 1.1} yPos={250} size={140} safe={1} /> : null}
+      <EvoBall xPos={width / 1.1} yPos={250} size={140} safe={1} />
       <EvoBall xPos={0} yPos={50} size={100} safe={0} />
     </div>
   );
