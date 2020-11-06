@@ -4,7 +4,7 @@ import Border from "./Border";
 import EvoBall from "./EvoBall";
 
 export default function About() {
-  const [height, setHeight] = useState(400);
+  const [height, setHeight] = useState(550);
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
