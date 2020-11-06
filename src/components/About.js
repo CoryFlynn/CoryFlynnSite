@@ -26,11 +26,16 @@ export default function About() {
         <p>
           As the domain suggests, my name is Cory Flynn and I am a software developer. I grew up in Sammamish, Washington; a suburb between Seattle and the
           Cascade Mountains. Because of my upbringing, I have always been drawn to the outdoors. I've been skiing for as long as I can remember, but recently I
-          have fallen in love with fishing and surfing. I think this love stems from the fact that I can fish and surf when theres no snow around. For my
-          education I attended the University of Colorado Boulder, where I struggled to find a major that was a good fit. After switching majors from Business
-          to Nueroscience, I finally settled on studying Computer Science and earned a Bachelors Degree in this discipline. In addition to Computer Science, I
-          was inclined to pick up two minors. One in Mathematics, a field that for reasons I cannot explain I have always been drawn to, and another in
-          Atmospheric and Oceanic Sciences. That one is a little easier to explain given my background as an outdoorsman, as it allowed me to explore the
+          have fallen in love with fishing and surfing. I think this love stems from the fact that I can fish and surf when theres no snow around. Beyond the
+          outdoors, I am deeply fascinated by science. For a breif stint in my childhood I thought maybe I would pursue becoming a doctor, then I realized how
+          much school was required and quickly turned to other professional dreams. Now I am hoping, time and money permits, that I can return to school some
+          day to push the boundaries of technolgy.
+        </p>
+        <p>
+          For my education I attended the University of Colorado Boulder, where I struggled to find a major that was a good fit. After switching majors from
+          Business to Nueroscience, I finally settled on studying Computer Science and earned a Bachelors Degree in this discipline. In addition to Computer
+          Science, I was inclined to pick up two minors. One in Mathematics, a field that for reasons I cannot explain I have always been drawn to, and another
+          in Atmospheric and Oceanic Sciences. That one is a little easier to explain given my background as an outdoorsman, as it allowed me to explore the
           science behind the natural phenomena that bring me so much enjoyment.
         </p>
       </div>
