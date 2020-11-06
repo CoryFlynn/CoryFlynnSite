@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./About.css";
 import Border from "./Border";
 import EvoBall from "./EvoBall";
+import Par from "./Par.js";
 
 export default function About() {
   const [height, setHeight] = useState(550);
@@ -40,7 +41,9 @@ export default function About() {
         </p>
       </div>
       <div className="about-image-container">
-        <img src="https://coryflynnsiteimages.s3-us-west-1.amazonaws.com/IMG_3449.jpeg" alt="Fish" className="about-image" />
+        <Par>
+          <img src="https://coryflynnsiteimages.s3-us-west-1.amazonaws.com/IMG_3449.jpeg" alt="Fish" className="about-image" />
+        </Par>
       </div>
       <EvoBall xPos={width / 5} yPos={height + 130} size={40} safe={0} />
       <EvoBall xPos={0} yPos={50} size={100} safe={0} />
