@@ -1,41 +1,40 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 
 const Wrapper = styled.div`
   display: inline-flex;
 `
 
-const MyLink = styled(Link)`
+const Link = styled.button`
   color: black;
-  margin: 4px 6px 0px 6px;
+  margin: 5px 6px 0px 6px;
   font-size: 16px;
 `
 
 const ExtLink = styled.a`
   color: black;
-  margin: 4px 6px 0px 6px;
+  margin: 5px 6px 0px 6px;
   font-size: 16px;
   text-decoration: underline;
 `
 
-export default function Links() {
+export default function Links({toggleShowResume}) {
   return (
     <Wrapper>
-      <MyLink to="portfolio" rel="noopener noreferrer">
+      {/* <MyLink to="/portfolio">
         Portfolio
-      </MyLink>
-      <MyLink to="/resume" rel="noopener noreferrer">
+      </MyLink> */}
+      {/* <Link onClick={toggleShowResume}>
         Resume
-      </MyLink>
+      </Link> */}
+      <ExtLink href="/CFlynn_Resume2022.pdf">
+        Resume
+      </ExtLink>
       <ExtLink href="mailto:Flynn.CoryJ@gmail.com" rel="noopener noreferrer">
         Email
       </ExtLink>
       <ExtLink href="https://github.com/CoryFlynn" rel="noopener noreferrer">
         Github
-      </ExtLink>
-      <ExtLink href="https://www.linkedin.com/in/cory-flynn-521137186/" rel="noopener noreferrer">
-        LinkedIn
       </ExtLink>
     </Wrapper>
   )

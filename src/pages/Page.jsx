@@ -10,7 +10,7 @@ const PageWrapper = styled.div`
 const WholePage = styled.div`
   background: ${({ color }) => color ? color : 'white'};
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
 `
