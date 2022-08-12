@@ -1,7 +1,10 @@
 import React from 'react'
+import { Document, Page } from 'react-pdf';
 
 export default function Resume() {
   return (
-    <iframe title="resume" src="CFlynn_Resume2022.pdf" width="800px" height="2100px" />
+    <Document file="CFlynn_Resume2022.pdf">
+      <Page pageNumber={1} />
+    </Document>
   )
 }
